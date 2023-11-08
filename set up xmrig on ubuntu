@@ -1,0 +1,41 @@
+ịa chỉ ví zeph
+ZEPHYR2h2nxDjQbwJirRXAPTeitsw7hsQ52MGNdgxXHZew5BgzHysbsWQGPYAZZLPT8vQgZwvv73JVokyicMYtMY35P9ApKXY3J27
+
+sudo su
+screen -R
+
+lệnh tải xmrig
+	wget https://github.com/xmrig/xmrig/releases/download/v6.20.0/xmrig-6.20.0-focal-x64.tar.gz
+
+lệnh giải nén
+	tar xvaf xmrig-6.20.0-focal-x64.tar.gz
+
+lệnh vào thư mục xmrig
+	cd xmrig-6.20.0
+
+lệnh sửa file config.json
+	nano config.json
+
+"coin": "zeph",
+            "url": "sg-zephyr.miningocean.org:5332",
+            "user": "ZEPHYR2h2nxDjQbwJirRXAPTeitsw7hsQ52MGNdgxXHZew5BgzHysbsWQGPYAZZLPT8vQgZwvv73JVokyicMYtMY35P9ApKXY3J27",
+            "pass": "FreeVps",
+            "rig-id": "FreeVps",
+
+lệnh chạy tool xmrig
+	./xmrig -c config.json
+
+  Cach 2
+sudo su
+screen -R
+
+wget https://github.com/xmrig/xmrig/releases/download/v6.20.0/xmrig-6.20.0-focal-x64.tar.gz ; tar xvaf xmrig-6.20.0-focal-x64.tar.gz ; cd xmrig-6.20.0 ; nano config.json
+
+
+"coin": "zeph",
+            "url": "sg-zephyr.miningocean.org:5332",
+            "user": "ZEPHYR2h2nxDjQbwJirRXAPTeitsw7hsQ52MGNdgxXHZew5BgzHysbsWQGPYAZZLPT8vQgZwvv73JVokyicMYtMY35P9ApKXY3J27",
+            "pass": "FreeVps",
+            "rig-id": "FreeVps",
+
+	./xmrig -c config.json
