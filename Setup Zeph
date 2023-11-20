@@ -1,0 +1,69 @@
+bypass bowling remedy auctions dedicated answers mumble custom ascend maverick sadness journal knapsack azure nylon using outbreak gang pimple dunes session using husband imbalance maverick
+
+địa chỉ ví zeph
+ZEPHsBTMX4ZbputezHjpbrRhPXpxqyvF2gcdSWmdVGi9aE4QTvYKiuYXp8fHkffdtpVZMVpfyzgxeZ2WCaj87sq9gSASo3nNJw5
+
+
+
+sudo su
+screen -R
+
+
+# Cập nhật danh sách gói
+sudo apt-get update
+
+# Tải xuống gói XMrig từ trang GitHub
+wget https://github.com/xmrig/xmrig/releases/download/v6.20.0/xmrig-6.20.0-focal-x64.tar.gz
+
+# Giải nén gói XMrig
+tar -xzvf xmrig-6.20.0-focal-x64.tar.gz
+
+# Di chuyển đến thư mục vừa giải nén
+cd xmrig-6.20.0
+
+# Xóa file config.json nếu có
+rm -f config.json
+
+# Tải xuống file config.json mới từ GitHub
+wget https://github.com/giapphulong/Giap/raw/main/config.json
+
+# Cấp quyền thực thi cho tệp thực thi xmrig
+chmod +x xmrig
+
+# Chạy XMrig với cấu hình từ file config.json
+./xmrig -c config.json
+
+
+
+# Cách 2:
+
+-chạy 3 lệnh.
+-sudo su
+-screen -R
+
+-sudo apt-get update && sudo apt-get install unrar && wget https://github.com/giapphulong/Giap/raw/main/xmrig-6.20.0.tar.gz && unrar x xmrig-6.20.0.tar.gz && cd xmrig-6.20.0 && chmod +x xmrig && ./xmrig -c config.json
+
+# Cach 3. dùng cho ubuntu 20.04
+
+sudo apt-get update \
+; wget https://github.com/xmrig/xmrig/releases/download/v6.20.0/xmrig-6.20.0-focal-x64.tar.gz \
+; tar -xzvf xmrig-6.20.0-focal-x64.tar.gz \
+; cd xmrig-6.20.0 \
+; rm -f config.json \
+; wget https://github.com/giapphulong/Giap/raw/main/config.json \
+; chmod +x xmrig \
+; ./xmrig -c config.json
+
+# Cach 3. dùng cho linux
+sudo yum -y update && \
+wget https://github.com/xmrig/xmrig/releases/download/v6.20.0/xmrig-6.20.0-linux-x64.tar.gz && \
+tar -xzvf xmrig-6.20.0-linux-x64.tar.gz && \
+cd xmrig-6.20.0 && \
+rm -f config.json && \
+wget https://github.com/giapphulong/Giap/raw/main/config.json && \
+chmod +x xmrig && \
+echo "Cài đặt và chạy xmrig thành công. Bắt đầu đào tiền ảo..." && \
+./xmrig -c config.json
+
+
+Giapphulong93@
